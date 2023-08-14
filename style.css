@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh; /* view port height 1vh =19.2px*/
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    /* to display the content on both side */
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+
+}
+.link{
+    color: black;
+    text-decoration: none;/* to remove underline */
+    font-weight: bold;
+    
+}
+.link:hover{ /* to gave red color on text when the mouse clicking on the link */
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: darkgoldenrod;
+    font-size: 50px;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 25% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    color: green;
+    font-size: 20px;
+}
+.about_content{
+    margin-top: 2rem; /*1rem=16px*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* side by side*/
+    gap: 2rem;/* gap b/w grids*/
+}
+.about_img img{
+    width: 80%;
+    border-radius: 1rem;
+
+}
+.about_details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;/*paragraph starting and ending on the same side*/ 
+}
+.info{
+    margin-top: 1rem;
+}
+.info_box{
+    margin-top: 1rem;
+}
+.info_box span{
+    margin-left: 1rem;
+}
+#Skill{
+    margin: 8% 8% 0px 8%;
+}
+ .skill_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem; 
+} 
+.skills_img img{
+    width: 80%;
+    border-radius: 1rem;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;/*overlapping with the same class*/
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    width: 95%;
+    background-color: #ffe817f5;
+}
+.css-bar{
+    width: 88%;
+    background-color: #ffe817f5;
+    
+}
+.react-bar{
+    width: 89%;
+    background-color: #ffe817f5;
+
+}
+.js-bar{
+    width: 85%;
+    background-color: #ffe817f5;
+
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;  /*vertically center*/
+    align-items: center;
+    
+}
+.icon,.arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;  /*vertically center*/
+    align-items: center;    /*horizontally center*/
+    margin: 0px 10px;
+    /* border: 1px solid black; */
+ 
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+    
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(253, 253, 23),rgb(153, 4, 4));
+   
+ 
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+footer i{
+ 
+    color: black;
+}
+.arrow{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;  /*vertically center*/
+    align-items: center;    /*horizontally center*/
+    /* margin: 0px 10px ; */
+    background-image: linear-gradient(to bottom right,rgb(253, 253, 23),rgb(153, 4, 4));
+}
+.arrow:hover i{
+    color: white;
+}
